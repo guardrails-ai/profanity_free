@@ -1,7 +1,7 @@
 [project]
-name = "regexmatch"
+name = "profanity_free"
 version = "0.0.0"
-description = "Template repo for Guardrails Hub validators."
+description = "Validates that a translated text does not contain profanity language."
 authors = [
     {name = "Guardrails AI", email = "contact@guardrailsai.com"}
 ]
@@ -9,7 +9,7 @@ license = {file = "LICENSE"}
 readme = "README.md"
 requires-python = ">= 3.8"
 dependencies = [
-    "rstr",
+    "alt-profanity-check",
     "guardrails-ai>=0.3.2",
     "pydantic>=2.4.2",
     "pytest"
