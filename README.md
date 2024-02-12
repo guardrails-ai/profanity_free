@@ -2,7 +2,7 @@
 
 | Developed by | Guardrails AI |
 | --- | --- |
-| Date of development |  |
+| Date of development | Feb 15, 2024 |
 | Validator type | Brand risk |
 | Blog |  |
 | License | Apache 2 |
