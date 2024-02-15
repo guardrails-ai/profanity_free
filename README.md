@@ -23,7 +23,7 @@ This validator catches profanity in the English language only
 ## Installation
 
 ```bash
-$ gudardrails hub install hub://guardrails/profanity_free
+$ guardrails hub install hub://guardrails/profanity_free
 ```
 
 ## Usage Examples
