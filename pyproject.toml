@@ -1,16 +1,31 @@
 [project]
 name = "profanity_free"
 version = "0.0.0"
-description = "Validates that a translated text does not contain profanity language."
+description = "Validates that a translated text does not contain profane language."
 authors = [
     {name = "Guardrails AI", email = "contact@guardrailsai.com"}
 ]
 license = {file = "LICENSE"}
 readme = "README.md"
-requires-python = ">= 3.8"
+requires-python = ">= 3.8.1"
 dependencies = [
+    "guardrails-ai>=0.4.0",
     "alt-profanity-check",
-    "guardrails-ai>=0.3.2",
-    "pydantic>=2.4.2",
-    "pytest"
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pyright",
+    "pytest",
+    "ruff"
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-rP"
+testpaths = [
+    "test"
+]
+
+[tool.pyright]
+include = ["validator"]
