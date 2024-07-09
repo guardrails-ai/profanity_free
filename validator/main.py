@@ -6,7 +6,7 @@ from guardrails.validator_base import (
     ValidationResult,
     Validator,
     register_validator,
-    ErrorSpan
+    # ErrorSpan
 )
 
 from profanity_check import predict
@@ -36,12 +36,13 @@ class ProfanityFree(Validator):
                 error_message=f"{value} contains profanity. "
                 f"Please return profanity-free output.",
                 fix_value="",
-                error_spans=[
-                    ErrorSpan(
-                        start=0,
-                        end=len(value),
-                        reason="This text contains profanity."
-                    )
-                ]
+                # error_spans=[
+                #     ErrorSpan(
+                #         start=0,
+                #         end=len(value),
+                #         reason="This text contains profanity."
+                #     )
+                # ]
             )
         return PassResult()
+    
