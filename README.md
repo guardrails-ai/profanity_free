@@ -1,3 +1,24 @@
+# ⚠️ This validator has moved
+
+This validator now lives in the [Guardrails Hub monorepo](https://github.com/guardrails-ai/guardrails-hub-monorepo/tree/main/profanity_free/py).
+**This repository is archived and no longer maintained** — please open issues and pull
+requests on the monorepo instead.
+
+```bash
+pip install guardrails-ai-profanity-free
+```
+
+```python
+from guardrails import Guard
+from guardrails_ai.profanity_free import ProfanityFree
+
+guard = Guard().use(ProfanityFree)
+```
+
+The registered validator name is unchanged, so existing guards keep working.
+
+---
+
 # Overview
 
 | Developed by | Guardrails AI |
